@@ -1,0 +1,257 @@
+
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="x-icon" href="sinp11.png">
+    <script src="https://kit.fontawesome.com/4a3b60632f.js" crossorigin="anonymous"></script>
+    <title>FRENA  E-PROCUREMENT PORTAL</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        .container {
+            padding: 2em;
+        }
+        .menu-bar {
+            font-family: Arial, sans-serif;
+            background-color: orange;
+            box-sizing: border-box;
+        }
+        .menu-bar ul {
+            display: inline-flex;
+            list-style: none;
+            color: black;
+        }
+        .menu-bar ul li {
+            width: 250px;
+            margin: 0.1px;
+            padding: 0.1px;
+            text-align: center;
+        }
+        .menu-bar ul li a {
+            text-decoration: none;
+            color: black;
+        }
+        .active, .menu-bar ul li:hover{
+            background:white;
+            border-radius: 3px;
+        }
+        .sub-menu-1 {
+            display: none;
+        }
+        .menu-bar ul li:hover .sub-menu-1 {
+            display: block;
+            position: absolute;
+            background:white;
+            margin-top: 15px;
+            margin-left: -2px;
+        }
+        .menu-bar ul li:hover  .sub-menu-1 ul{
+            display: block;
+            margin: 10px;
+        }
+        .menu-bar ul li:hover .sub-menu-1 ul li{
+            width: 170px;
+            padding: 10px;
+            border-bottom: 1px dotted black;
+            border-radius: 0;
+            text-align: left;
+        }
+        .menu-bar ul li:hover .sub-menu-1 ul li:last-child{
+            border-bottom: none;
+        }
+        .menu-bar ul li:hover .sub-menu-1 ul li a:hover{
+            color: orange;
+        }
+        .menu-bar2 {
+            font-family: Arial, sans-serif;
+            background-color: orange;
+            box-sizing: border-box;
+        }
+        .menu-bar2 ul {
+            display: inline-flex;
+            list-style: none;
+            color: black;
+        }
+        .menu-bar2 ul li {
+            width: 250px;
+            margin: 0.1px;
+            padding: 0.1px;
+            text-align: center;
+        }
+        .menu-bar2 ul li a {
+            text-decoration: none;
+            color: black;
+        }
+        .active, .menu-bar2 ul li:hover{
+            background:white;
+            border-radius: 3px;
+        }
+
+
+        form {
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2em;
+        }
+        form div {
+            margin-bottom: 1em;
+        }
+        form label {
+            display: block;
+            margin-bottom: .5em;
+        }
+        form input, form select, form textarea {
+            width: 100%;
+            padding: .5em;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        table th, table td {
+            padding: 1em;
+            border: 1px solid #ddd;
+        }
+        table th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+<div class="menu-bar">
+    <ul>
+        <li><a href="index.html"><i class="fa-sharp fa-solid fa-house" ></i>  Home</a></li>
+        <li><a href="#"><i class="fa-solid fa-atom fa-lg"></i>  Our Mission</a>
+            <div class="sub-menu-1" >
+                <ul>
+                    <li><a href="#">Vision</a></li>
+                    <li><a href="#">Upcoming Missions</a></li>
+                    <li><a href="#">Missions Accomplished</a></li>
+                </ul>
+            </div>
+        </li>
+        <li><a href="eprocurement.html"><i class = "fa fa-shopping-cart"></i>  E-Procurement Portal</a></li>
+        <li><a href="#"><i class="fa-solid fa-id-badge"></i>  About Us</a>
+        <div class="sub-menu-1" >
+                <ul>
+                    <li><a href="#">DAE</a></li>
+                    <li><a href="#">SINP</a></li>
+                    <li><a href="#">FRENA</a></li>
+                </ul>
+            </div>
+        </li>
+        <li><a href="#"><i class="fa-solid fa-envelope"></i>  Contact</a></li>
+    </ul>
+</div>
+
+<header>
+
+    <h4>FRENA PROCUREMENT PORTAL</h4>
+    </header>
+
+<div class="menu-bar2">
+    <ul>
+        <li ><a href="eprocurement.html"><i class="fa-solid fa-pen"></i>  Create Record</a></li>
+        <li><a href="display.html"><i class="fa-solid fa-eye"></i>  Display Record</a></li>
+        <li class="active"><a href="update.html"><i class="fa-solid fa-user-pen"></i>  Update Record</a></li>
+        <li><a href="search.html"><i class="fa-solid fa-magnifying-glass"></i>  Search Record</a></li>
+        <li><a href="delete.html"><i class="fa-solid fa-trash-can"></i>  Delete Record</a></li>
+    </ul>
+</div>
+
+<div class="container">
+    <form action='' method='post' id="procurement-form">
+        <header>
+        <h3> UPDATE RECORD</h3>
+        </header>
+        <div>
+            <label for="serial-number">1.SI No</label>
+            <input type="number" id="serial-number" name="serial-number" value="{{datas.serial-number}}" required>
+        </div>
+        <div>
+            <label for="item-name">2.Item Name</label>
+            <input type="text" id="item-name" name="item-name" value="{{datas.item-name}}" required>
+        </div>
+        <div>
+            <label for="item-quantity">3.Item Quantity</label>
+            <input type="number" id="item-quantity" name="item-quantity" value="{{datas.item-quantity}}" required>
+        </div>
+        <div>
+            <label for="item-unit-price">4.Item Unit Price</label>
+            <input type="number" id="item-unit-price" name="item-unit-price" value="{{datas.item-unit-price}}" required>
+        </div>
+        <div>
+            <label for="tax">5.Tax</label>
+            <input type="number" id="tax" name="tax" value="{{datas.tax}}" required>
+        </div>
+        <div>
+            <label for="total-price">6.Total Price</label>
+            <input type="number" id="total-price" name="total-price" value="{{datas.total-price}}" required>
+        </div>
+        <div>
+            <label for="transaction-id">7.Transaction ID No</label>
+            <input type="text" id="transaction-id" name="transaction-id" value="{{datas.transcation-id}}" required>
+        </div>
+        <div>
+            <label for="intender-name">8.Intender Name</label>
+            <input type="text" id="intender-name" name="intender-name" value="{{datas.intender-name}}" required>
+        </div>
+        <div>
+            <label for="supplier-name">9.Supplier Name</label>
+            <input type="text" id="supplier-name" name="supplier-name" value="{{datas.supplier-name}}" required>
+        </div>
+        <div>
+            <label for="procurement-date">10.Procurement Date</label>
+            <input type="date" id="procurement-date" name="procurement-date" value="{{datas.procurement-date}}" required>
+        </div>
+        <div>
+            <label for="authority-approval-name">11.Authority Approval Name</label>
+            <input type="text" id="authority-approval-name" name="authority-approval-name" value="{{datas.authority-approval-name}}" required>
+        </div>
+        <div>
+            <label for="approval-status">12.Approval Status</label>
+            <select id="approval-status" name="approval-status" value="{{datas.approval-status}}" required>
+                <option value="approved">Approved</option>
+                <option value="pending">Pending</option>
+                <option value="rejected">Rejected</option>
+            </select>
+        </div>
+        <div>
+            <label for="delivery-date">13.Delivery Date</label>
+            <input type="date" id="delivery-date" name="delivery-date" value="{{datas.delivery-date}}" required>
+        </div>
+        <div>
+            <label for="remarks">14.Remarks</label>
+            <textarea id="remarks" name="remarks" rows="4" value="{{datas.remarks}}" required></textarea>
+        </div>
+        <button type="submit" >Submit</button>
+
+    </form>
+
+
+    
+          
+</div>
+
+
+
+</body>
+</html>

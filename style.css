@@ -1,0 +1,115 @@
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        .container {
+            padding: 2em;
+
+        }
+        .menu-bar {
+            font-family: Arial, sans-serif;
+            background-color: orange;
+            box-sizing: border-box;
+        }
+        .menu-bar ul {
+            display: inline-flex;
+            list-style: none;
+            color: black;
+        }
+        .menu-bar ul li {
+            width: 250px;
+            margin: 0.1px;
+            padding: 0.1px;
+            text-align: center;
+        }
+        .menu-bar ul li a {
+            text-decoration: none;
+            color: black;
+        }
+        .active, .menu-bar ul li:hover{
+            background:white;
+            border-radius: 3px;
+        }
+        .sub-menu-1 {
+            display: none;
+        }
+        .menu-bar ul li:hover .sub-menu-1 {
+            display: block;
+            position: absolute;
+            background:white;
+            margin-top: 15px;
+            margin-left: -2px;
+        }
+        .menu-bar ul li:hover  .sub-menu-1 ul{
+            display: block;
+            margin: 10px;
+        }
+        .menu-bar ul li:hover .sub-menu-1 ul li{
+            width: 170px;
+            padding: 10px;
+            border-bottom: 1px dotted black;
+            border-radius: 0;
+            text-align: left;
+        }
+        .menu-bar ul li:hover .sub-menu-1 ul li:last-child{
+            border-bottom: none;
+        }
+        .menu-bar ul li:hover .sub-menu-1 ul li a:hover{
+            color: orange;
+        }
+        .footerBottom{
+            background-color: orange;
+            text-align: center;
+            padding: 1px;
+        }
+        .footerDate{
+            text-align: right;
+            background-color: #85C1E9;
+            padding: 0.5px;
+        }
+        .location{
+            text-align: left;
+        }
+
+        form {
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2em;
+        }
+        form div {
+            margin-bottom: 1em;
+        }
+        form label {
+            display: block;
+            margin-bottom: .5em;
+        }
+        form input, form select, form textarea {
+            width: 100%;
+            padding: .5em;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        table th, table td {
+            padding: 1em;
+            border: 1px solid #ddd;
+        }
+        table th {
+            background-color: #f2f2f2;
+        }
+    

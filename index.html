@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="x-icon" href="../static/pics/sinp9.ico">
+    <script src="https://kit.fontawesome.com/4a3b60632f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="scriptsheet" href="script.js">
+
+    <title>FRENA  E-PROCUREMENT PORTAL</title>
+    
+</head>
+<body>
+    
+<div class="menu-bar">
+    <ul>
+        <li class="active"><a href="index.html"><i class="fa-sharp fa-solid fa-house" ></i>  Home</a></li>
+        <li><a href="#"><i class="fa-solid fa-atom fa-lg"></i>  Our Mission</a>
+            <div class="sub-menu-1" >
+                <ul>
+                    <li><a href="#"><i class="fa-solid fa-lightbulb"></i> Vision</a></li>
+                    <li><a href="#"><i class="fa-solid fa-list-check"></i> Upcoming Missions</a></li>
+                    <li><a href="#"><i class="fa-solid fa-square-check"></i> Missions Accomplished</a></li>
+                </ul>
+            </div>
+        </li>
+        <li><a href="eprocurement.html"><i class = "fa fa-shopping-cart"></i>  E-Procurement Portal</a></li>
+        <li><a href="#"><i class="fa-solid fa-id-badge"></i>  About Us</a>
+        <div class="sub-menu-1" >
+                <ul>
+                    <li><a href="#"><i class="fa-solid fa-atom"></i> DAE</a></li>
+                    <li><a href="#"><i class="fa-brands fa-galactic-republic"></i> SINP</a></li>
+                    <li><a href="#"><i class="fa-solid fa-jedi"></i> FRENA</a></li>
+                </ul>
+            </div>
+        </li>
+        <li><a href="#"><i class="fa-solid fa-envelope"></i>  Contact</a></li>
+    </ul>
+</div>
+<header>
+    <img src="../static/pics/dae.jpg" alt="DAE LOGO" width="70" height="70" style="float:left" > <img src="../static/pics/sinp11.png" alt="SINP LOGO" width="70" height="70" style="float:left"><img src="../static/pics/emblem.png" alt="ASHOKA SYMBOL" width="90" height="90"><img src="../static/pics/LogoDAEIW.jpg" alt="DAE LOGO" width="70" height="70" style="float:right"><img src="../static/pics/azadikaamrit.jpg" alt="DAE LOGO" width="70" height="70" style="float:right">
+    <h1> DEPARTMENT OF ATOMIC ENERGY - GOVERNMENT OF INDIA </h1>
+    <h2>  SAHA INSTITUTE OF NUCLEAR PHYSICS </h2>
+    <p>An Institution of Basic Research and Training in Physical and Biophysical Sciences</p>
+    <p> Sector-1, Block-AF, Bidhan Nagar, Kolkata-700 064, West Bengal, India</p>
+    </header>
+
+<div class="container">
+    <header>
+        <h3>FRENA</h3>
+        <h4>FACILITY FOR RESEARCH IN EXPERIMENTAL NUCLEAR ASTROPHYSICS</h4>
+    </header>
+</div>
+
+<center><img src="../static/pics/frenalogo.png" alt="FRENA LOGO" width="250" height="170"> </center>
+<br>
+    <footer>
+        <div class="footerDate">
+            <p><i class="fa-regular fa-calendar-days"></i> <span id='date-time'></span></p>
+        </div>
+        <br>
+        <div class="footerBottom">
+            <p>Copyright &copy; <span id="cyear"></span> - FRENA </p>
+
+        </div>
+    </footer>
+<script>
+    window.addEventListener('load', () => {
+        const year = document.getElementById('cyear');
+        year.innerHTML = new Date().getFullYear();
+    });
+</script>
+<script>
+    var dt = new Date();
+    document.getElementById('date-time').innerHTML=dt;
+</script>
+
+</body>
+</html>

@@ -1,0 +1,299 @@
+
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="x-icon" href="../static/pics/sinp9.ico">
+    <script src="https://kit.fontawesome.com/4a3b60632f.js" crossorigin="anonymous"></script>
+    <title>FRENA  E-PROCUREMENT PORTAL</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        .container {
+            padding: 2em;
+        }
+        .menu-bar {
+            font-family: Arial, sans-serif;
+            background-color: orange;
+            box-sizing: border-box;
+        }
+        .menu-bar ul {
+            display: inline-flex;
+            list-style: none;
+            color: black;
+        }
+        .menu-bar ul li {
+            width: 250px;
+            margin: 0.1px;
+            padding: 0.1px;
+            text-align: center;
+        }
+        .menu-bar ul li a {
+            text-decoration: none;
+            color: black;
+        }
+        .active, .menu-bar ul li:hover{
+            background:white;
+            border-radius: 3px;
+        }
+        .sub-menu-1 {
+            display: none;
+        }
+        .menu-bar ul li:hover .sub-menu-1 {
+            display: block;
+            position: absolute;
+            background:white;
+            margin-top: 15px;
+            margin-left: -2px;
+        }
+        .menu-bar ul li:hover  .sub-menu-1 ul{
+            display: block;
+            margin: 10px;
+        }
+        .menu-bar ul li:hover .sub-menu-1 ul li{
+            width: 170px;
+            padding: 10px;
+            border-bottom: 1px dotted black;
+            border-radius: 0;
+            text-align: left;
+        }
+        .menu-bar ul li:hover .sub-menu-1 ul li:last-child{
+            border-bottom: none;
+        }
+        .menu-bar ul li:hover .sub-menu-1 ul li a:hover{
+            color: orange;
+        }
+        .menu-bar2 {
+            font-family: Arial, sans-serif;
+            background-color: orange;
+            box-sizing: border-box;
+        }
+        .menu-bar2 ul {
+            display: inline-flex;
+            list-style: none;
+            color: black;
+        }
+        .menu-bar2 ul li {
+            width: 250px;
+            margin: 0.1px;
+            padding: 0.1px;
+            text-align: center;
+        }
+        .menu-bar2 ul li a {
+            text-decoration: none;
+            color: black;
+        }
+        .active, .menu-bar2 ul li:hover{
+            background:white;
+            border-radius: 3px;
+        }
+
+
+        form {
+            background: #fff;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2em;
+        }
+        form div {
+            margin-bottom: 1em;
+        }
+        form label {
+            display: block;
+            margin-bottom: .5em;
+        }
+        form input, form select, form textarea {
+            width: 100%;
+            padding: .5em;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        table th, table td {
+            padding: 1em;
+            border: 1px solid #ddd;
+        }
+        table th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+<div class="menu-bar">
+    <ul>
+        <li><a href="index.html"><i class="fa-sharp fa-solid fa-house" ></i>  Home</a></li>
+        <li><a href="#"><i class="fa-solid fa-atom fa-lg"></i>  Our Mission</a>
+            <div class="sub-menu-1" >
+                <ul>
+                    <li><a href="#"><i class="fa-solid fa-lightbulb"></i>Vision</a></li>
+                    <li><a href="#"><i class="fa-solid fa-list-check"></i>Upcoming Missions</a></li>
+                    <li><a href="#"><i class="fa-solid fa-square-check"></i>Missions Accomplished</a></li>
+                </ul>
+            </div>
+        </li>
+        <li><a href="eprocurement.html"><i class = "fa fa-shopping-cart"></i>  E-Procurement Portal</a></li>
+        <li><a href="#"><i class="fa-solid fa-id-badge"></i>  About Us</a>
+        <div class="sub-menu-1" >
+                <ul>
+                    <li><a href="#"><i class="fa-solid fa-atom"></i>DAE</a></li>
+                    <li><a href="#"><i class="fa-brands fa-galactic-republic"></i>SINP</a></li>
+                    <li><a href="#"><i class="fa-solid fa-jedi"></i>FRENA</a></li>
+                </ul>
+            </div>
+        </li>
+        <li><a href="#"><i class="fa-solid fa-envelope"></i>  Contact</a></li>
+    </ul>
+</div>
+
+<header>
+
+    <h4>FRENA PROCUREMENT PORTAL</h4>
+    </header>
+
+<div class="menu-bar2">
+    <ul>
+        <li class="active"><a href="eprocurement.html"><i class="fa-solid fa-pen"></i>  Create Record</a></li>
+        <li><a href="display.html"><i class="fa-solid fa-eye"></i>  Display Record</a></li>
+        <li><a href="update.html"><i class="fa-solid fa-user-pen"></i>  Update Record</a></li>
+        <li><a href="search.html"><i class="fa-solid fa-magnifying-glass"></i>  Search Record</a></li>
+        <li><a href="delete.html"><i class="fa-solid fa-trash-can"></i>  Delete Record</a></li>
+    </ul>
+</div>
+
+<div class="container">
+    <form action='' method='post'>
+        <header>
+        <h3> CREATE RECORD</h3>
+        </header>
+        <br>
+        <div>
+            <label>1.SI No</label>
+            <input type="number" placeholder="Enter Serial Number" name="serialNumber" required>
+        </div>
+        <div>
+            <label>2.Item Name</label>
+            <input type="text" placeholder="Enter Item Name" name="itemName" required>
+        </div>
+        <div>
+            <label>3.Item Quantity</label>
+            <input type="number" placeholder="Enter Item Quantity"  name="itemQuantity" required>
+        </div>
+        <div>
+            <label>4.Item Unit Price</label>
+            <input type="number" placeholder="Enter Item Unit Price"  name="itemUnitPrice" required>
+        </div>
+        <div>
+            <label>5.Tax</label>
+            <input type="number" placeholder="Enter Tax"  name="tax" required>
+        </div>
+        <div>
+            <label>6.Total Price</label>
+            <input type="number" placeholder="Enter Total Price"  name="totalPrice" required>
+        </div>
+        <div>
+            <label>7.Transaction ID No</label>
+            <input type="text" placeholder="Enter Transcation Id"  name="transactionId" required>
+        </div>
+        <div>
+            <label>8.Intender Name</label>
+            <input type="text"  placeholder="Enter Intender Name"  name="intenderName" required>
+        </div>
+        <div>
+            <label>9.Supplier Name</label>
+            <input type="text" placeholder="Enter Supplier Name"  name="supplierName" required>
+        </div>
+        <div>
+            <label>10.Procurement Date</label>
+            <input type="date" placeholder="Enter Procurement Date"  name="procurementDate" required>
+        </div>
+        <div>
+            <label>11.Authority Approval Name</label>
+            <input type="text" placeholder="Enter Authority Approval Name"  name="authorityApprovalName" required>
+        </div>
+        <div>
+            <label>12.Approval Status</label>
+            <select id="approval-status" name="approvalStatus" required>
+                <option value="approved">Approved</option>
+                <option value="pending">Pending</option>
+                <option value="rejected">Rejected</option>
+            </select>
+        </div>
+        <div>
+            <label>13.Delivery Date</label>
+            <input type="date" placeholder="Enter Delivery Date"  name="deliveryDate" required>
+        </div>
+        <div>
+            <label>14.Remarks</label>
+            <input type="text"  placeholder="Enter Remarks" name="remarks" rows="4"></textarea>
+        </div>
+        <input type="submit" value="SUBMIT THE ENTERED RECORD">
+
+    </form>
+
+
+    
+</div>
+<table>
+        <tr>
+            <th>ID</th>
+            <th>SI NO</th>
+            <th>ITEM NAME</th>
+            <th>ITEM QUANTITY</th>
+            <th>ITEM UNIT PRICE</th>
+            <th>TAX</th>
+            <th>TOTAL PRICE</th>
+            <th>TRANSCATION ID</th>
+            <th>INTENDER NAME</th>
+            <th>SUPPLIER NAME</th>
+            <th>PROCUREMENT DATE</th>
+            <th>AUTHORITY APPROVAL NAME</th>
+            <th>APPROVAL STATUS</th>
+            <th>DELIVERY DATE</th>
+            <th>REMARKS</th>
+            <th>EDIT</th>
+            <th>DELETE</th>
+        </tr>
+        {% for data in datas %}
+            <tr>
+                <td>{{data.ID}}</td>
+                <td>{{data.serialNumber}}</td>
+                <td>{{data.itemName}}</td>
+                <td>{{data.itemQuantity}}</td>
+                <td>{{data.itemUnitPrice}}</td>
+                <td>{{data.tax}}</td>
+                <td>{{data.totalPrice}}</td>
+                <td>{{data.transactionId}}</td>
+                <td>{{data.intenderName}}</td>
+                <td>{{data.supplierName}}</td>
+                <td>{{data.procurementDate}}</td>
+                <td>{{data.authorityApprovalName}}</td>
+                <td>{{data.approvalStatus}}</td>
+                <td>{{data.deliveryDate}}</td>
+                <td>{{data.remarks}}</td>
+                <td><a href="{{url_for('update', id=data.id)}}"> Edit </a></td>
+                <td><a onclick="return confirm('Are you sure you want to delete?');" href="{{url_for('deleteData', id=data.id)}}"> Delete </a></td>
+            </tr>
+        {% endfor %}
+                
+    </table>
+
+
+</body>
+</html>
